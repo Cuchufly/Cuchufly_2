@@ -1,0 +1,37 @@
+/*------------------------------------*\
+    STYLES
+\*------------------------------------*/
+
+/*
+ * All styling is done in a modular fashion, so each component should have it's own sass file
+ * 
+ */
+
+
+
+//---------- Requirements (Base) ---------
+// Base styles that are project agnostic 
+
+@import "base/mediaqueries";
+@import "base/typography";
+@import "base/variables";
+@import "normalize";
+
+
+//---------- Behaviours ---------
+// Behavioural styles
+
+@import "structure/grid"; 
+@import "structure/helper"; 
+
+
+//---------- Sections ---------
+// layout of of the site add sections
+
+@import "sections/home"; 
+@import "sections/about"; 
+
+// body{
+// 	background: yellow;
+// }
+
