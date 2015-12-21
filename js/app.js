@@ -6,14 +6,19 @@ var myApp = angular.module('myApp', ['ui.router'])
 	$urlRouterProvider.otherwise('/');
 
 	$stateProvider
-		.state('/home', {
+		.state('home', {
 			url: '/',
 			templateUrl: 'views/home.html',
 			controller: 'HomeController'
 		})
-		.state('/about', {
-			url: '/',
+		.state('about', {
+			url: '/about',
 			templateUrl: 'views/about.html',
 			controller: 'AboutController'
+		})
+		.state('buy', {
+			url: '/buy',
+			templateUrl: 'views/buy.html',
+			controller: 'BuyController'
 		})
 }]);
